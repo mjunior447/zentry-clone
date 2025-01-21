@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
@@ -26,7 +27,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
     }, containerRef);
   }, []);
 
-  // split every line and every word so that one can animate words separately
+  // split every line and every word so that we can animate words separately
   return (
     <div ref={containerRef} className={`animated-title ${containerClass}`}>
       {title.split("<br />").map((line, index) => (

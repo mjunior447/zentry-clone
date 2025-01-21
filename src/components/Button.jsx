@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Button = ({ id, title, leftIcon, rightIcon, containerClass }) => {
   return (
     <button
